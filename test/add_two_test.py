@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """ Unit testing add_two """
+import unittest
 import me495_practices.hardmath as hardmath
 
 class HardCase(unittest.TestCase):
