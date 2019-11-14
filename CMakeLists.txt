@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(me495_practices)
 
-find_package(catkin REQUIRED message_generation)
+find_package(catkin REQUIRED COMPONENTS message_generation)
 
 add_message_files(
   FILES
@@ -13,15 +13,16 @@ add_service_files(
    fake_service.srv
 )
 
-generate_messages()
-
 # use the setup.py to install python modules
 catkin_python_setup()
+
+generate_messages()
+
 
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES practice
-#  CATKIN_DEPENDS other_catkin_pkg
+  CATKIN_DEPENDS message_runtime
 #  DEPENDS system_lib
 )
 
