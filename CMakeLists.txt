@@ -5,12 +5,12 @@ find_package(catkin REQUIRED COMPONENTS message_generation)
 
 add_message_files(
   FILES
-  fake_msg.msg
+  OneInt.msg
 )
 
 add_service_files(
    FILES
-   fake_service.srv
+   TwoResult.srv
 )
 
 # use the setup.py to install python modules
