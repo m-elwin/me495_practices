@@ -1,3 +1,4 @@
-int32 input # a number
+int32 input1 # a number
+int32 input2 # another number
 ---
 int32 output # a result

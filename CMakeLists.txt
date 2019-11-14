@@ -26,12 +26,10 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-include_directories(
-# include
-# ${catkin_INCLUDE_DIRS}
-)
+install(PROGRAMS
+   nodes/add_numbers
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   )
 
 #############
 ## Testing ##
