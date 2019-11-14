@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(me495_practices)
+
+find_package(catkin REQUIRED message_generation)
+
+add_message_files(
+  FILES
+  fake_msg.msg
+)
+
+add_service_files(
+   FILES
+   fake_service.srv
+)
+
+generate_messages()
+
+# use the setup.py to install python modules
+catkin_python_setup()
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES practice
+#  CATKIN_DEPENDS other_catkin_pkg
+#  DEPENDS system_lib
+)
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+include_directories(
+# include
+# ${catkin_INCLUDE_DIRS}
+)
+
+#############
+## Testing ##
+#############
+
+## Add gtest based cpp test target and link libraries
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_practice.cpp)
+# if(TARGET ${PROJECT_NAME}-test)
+#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
+# endif()
+
+## Add folders to be run by python nosetests
+# catkin_add_nosetests(test)
