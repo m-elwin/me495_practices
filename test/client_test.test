@@ -1,0 +1,6 @@
+<launch>
+
+<node name="add_server" pkg="me495_practices" type="add_numbers" />
+<test test-name="client" pkg="me495_practices" type="add_two_client_test.py" />
+
+</launch>
