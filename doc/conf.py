@@ -129,7 +129,9 @@ html_static_path = ['.static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     '**': [
+        'localtoc.html',
         'relations.html',  # needs 'show_related': True theme option to display
+        'sourcelink.html',
         'searchbox.html',
     ]
 }
