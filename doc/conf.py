@@ -36,7 +36,7 @@
 import os
 import sys
 import catkin_pkg.package
-import string
+import datetime
 catkin_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) 
 catkin_package = catkin_pkg.package.parse_package(os.path.join(catkin_dir, catkin_pkg.package.PACKAGE_MANIFEST_FILENAME))
 
@@ -73,8 +73,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = catkin_package.name
-copyright = '2019, ' + string.join([str(x) for x in catkin_package.authors])
-author = string.join([str(x) for x in catkin_package.authors])
+copyright = str(datetime.date.today().year) + " ".join([str(x) for x in catkin_package.authors])
+author = "".join([str(x) for x in catkin_package.authors])
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

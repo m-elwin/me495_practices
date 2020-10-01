@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Taken from https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html 
-
+From https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html 
 Accessed 11/13/2019
-
-Used as an educational example
+Used as an educational example.
 
 Author: Rob Ruana
 
