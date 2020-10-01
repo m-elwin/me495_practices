@@ -26,7 +26,7 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
-install(PROGRAMS
+catkin_install_python(PROGRAMS
    nodes/add_numbers
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
    )
