@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.8)
 project(me495_practices)
 
 find_package(catkin REQUIRED COMPONENTS message_generation)
@@ -35,11 +35,11 @@ install(PROGRAMS
 ## Testing ##
 #############
 
-## Add folders to be run by python nosetests
-catkin_add_nosetests(test)
 
 # Add rostest files
 if (CATKIN_ENABLE_TESTING)
     find_package(rostest REQUIRED)
     add_rostest(test/client_test.test)
+    ## Add folders to be run by python nosetests
+    catkin_add_nosetests(test)
 endif()
